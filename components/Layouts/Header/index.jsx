@@ -142,7 +142,7 @@ export default function index({activePage}) {
                       <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                         <div className="dark:bg-gray-900 relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                           {resources.map((item) => (
-                            <a
+                            <Link
                               key={item.name}
                               href={item.href}
                               className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50  dark:hover:bg-gray-800"
@@ -152,7 +152,7 @@ export default function index({activePage}) {
                                 <p className="text-base font-medium text-gray-900 dark:text-white">{item.name}</p>
                                 <p className="mt-1 text-sm text-gray-500">{item.description}</p>
                               </div>
-                            </a>
+                            </Link>
                           ))}
                         </div>
                         
@@ -219,14 +219,14 @@ export default function index({activePage}) {
               <div className="mt-6">
                 <nav className="grid gap-y-8">
                   {solutions.map((item) => (
-                    <a
+                    <Link
                       key={item.name}
                       href={item.href}
                       className="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50 dark:hover:bg-gray-800"
                     >
                       <item.icon className="h-6 w-6 flex-shrink-0 text-indigo-600" aria-hidden="true" />
                       <span className="ml-3 text-base font-medium text-gray-900 dark:text-white">{item.name}</span>
-                    </a>
+                    </Link>
                   ))}
                   <div className='-m-3 flex items-center ml-1'>
                    <Switch
@@ -254,13 +254,13 @@ export default function index({activePage}) {
             <div className="space-y-6 py-6 px-5">
               <div className="grid grid-cols-2 gap-y-4 gap-x-8">
                 {resources.map((item) => (
-                  <a
+                  <Link
                     key={item.name}
                     href={item.href}
                     className="text-base font-medium text-gray-900 hover:text-gray-700 dark:text-white"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
             

@@ -4,6 +4,7 @@ import Header from '../../components/Layouts/Header'
 import { projects } from '../../data/projects';
 import SocialMedia from '../../components/Layouts/SocialMedial'
 import Carousel from'../../components/UI/Carousel'
+import Link from 'next/link';
 
 
 export default function Projects() {
@@ -25,7 +26,7 @@ export default function Projects() {
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
           {items.description}
         </p>
-        <a
+        <button
           onClick={()=>{
             setIsopen(!isOpen)
           }}
@@ -45,7 +46,7 @@ export default function Projects() {
               clip-rule="evenodd"
             ></path>
           </svg>
-        </a>
+        </button>
       </div>
     </div>
       )

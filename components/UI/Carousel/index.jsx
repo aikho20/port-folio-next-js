@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useState, useRef, useEffect } from 'react';
 const Carousel = () => {
     const resources =[
@@ -141,7 +142,7 @@ const Carousel = () => {
                 key={index}
                 className="carousel-item text-center relative w-64 h-64 snap-start"
               >
-                <a
+                <Link
                   href='#'
                   className="h-full w-full aspect-square block bg-origin-padding bg-left-top bg-cover bg-no-repeat z-0"
                   style={{ backgroundImage: `url(${resource.imageUrl || ''})` }}
@@ -151,7 +152,7 @@ const Carousel = () => {
                     alt={resource.title}
                     className="w-full aspect-square hidden"
                   />
-                </a>
+                </Link>
               </div>
             );
           })}

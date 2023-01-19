@@ -3,6 +3,7 @@ import Header from '../components/Layouts/Header'
 import { experience, skillSet } from '../data/home';
 import SocialMedia from '../components/Layouts/SocialMedial'
 import { useTheme } from 'next-themes';
+import Link from 'next/link';
 
 export default function Home() {
 
@@ -20,10 +21,10 @@ export default function Home() {
                 <div className="relative overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20 dark:ring-white">
                   <span className="text-gray-600">
                     Check personal blog post.{" "}
-                    <a href="/" className="font-semibold text-indigo-600">
+                    <Link href="/" className="font-semibold text-indigo-600">
                       <span className="absolute inset-0" aria-hidden="true" />
                       View <span aria-hidden="true">&rarr;</span>
-                    </a>
+                    </Link>
                   </span>
                 </div>
               </div>
@@ -35,7 +36,7 @@ export default function Home() {
                 A Front-End Developer is responsible for developing new user-facing features, determining the structure and design of web pages, building reusable codes, optimizing page loading times, and using a variety of markup languages to create the web pages.
                 </p>
                 <div className="mt-8 flex gap-x-4 sm:justify-center">
-                  <a
+                  <Link
                     href="mailto:marco.deguzman.ico@gmail.com"
                     className="inline-block rounded-lg bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-0 hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:ring-pink-700"
                   >
@@ -43,8 +44,8 @@ export default function Home() {
                     <span className="text-indigo-200" aria-hidden="true">
                       &rarr;
                     </span>
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="/Information"
                     className="inline-block rounded-lg px-4 py-1.5 text-base font-semibold leading-7 text-gray-900 dark:text-white ring-1 ring-gray-900/10 hover:ring-gray-900/20 dark:ring-white"
                   >
@@ -52,7 +53,7 @@ export default function Home() {
                     <span className="text-gray-400" aria-hidden="true">
                       &rarr;
                     </span>
-                  </a>
+                  </Link>
           
                 </div>
               </div>
