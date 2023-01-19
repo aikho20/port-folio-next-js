@@ -63,7 +63,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function index({activePage}) {
+export default function Header({activePage}) {
   const { theme, setTheme } = useTheme()
   const [enabled, setEnabled] = useState(false)
 

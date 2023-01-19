@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 
-function index() {
+function SocialMedia() {
   return (
 
    <div class="px-1 py-12 overflow-y-auto rounded bg-transparent dark:bg-transparent w-11 block z-10">
@@ -34,4 +34,4 @@ function index() {
   )
 }
 
-export default index
+export default SocialMedia

@@ -1,6 +1,6 @@
 import React from 'react'
 
-function index({title,description,titleClassName,descriptionClassName}) {
+function Card({title,description,titleClassName,descriptionClassName}) {
   return (
     <div className='card-container'>
         <h1 className={titleClassName}>{title}</h1>
@@ -9,4 +9,4 @@ function index({title,description,titleClassName,descriptionClassName}) {
   )
 }
 
-export default index
+export default Card
