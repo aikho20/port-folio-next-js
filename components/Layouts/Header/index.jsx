@@ -4,17 +4,11 @@ import { Fragment, useEffect, useState } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { Switch } from '@headlessui/react';
 import {
-  ArrowPathIcon,
   Bars3Icon,
-  BookmarkSquareIcon,
   CalendarIcon,
-  ChartBarIcon,
-  CursorArrowRaysIcon,
   LifebuoyIcon,
   PhoneIcon,
-  PlayIcon,
   ShieldCheckIcon,
-  Squares2X2Icon,
   UserIcon,
   SunIcon,
   HomeIcon,
@@ -24,6 +18,7 @@ import {
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { useTheme } from 'next-themes';
+import Link from 'next/link';
 
 const solutions = [
   {
@@ -81,28 +76,28 @@ export default function index({activePage}) {
       <div className="mx-auto max-w-7xl px-6 dark:bg-black-400">
         <div className="flex items-center justify-between border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10 gap-3">
           <div className="flex justify-start lg:w-0 lg:flex-1">
-            <a href="#">
+            <Link href="/">
               <span className="sr-only">MARCO ICO</span>
               <p className='text-white px-2.5 py-2 rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500'>MI</p>
-            </a>
+            </Link>
           </div>
           <div className="hidden space-x-10 md:flex">
-          <a href="/" className={`text-base font-medium ${activePage===1 ? 'text-indigo-500':'text-gray-500'} dark:hover:text-white hover:text-gray-900 flex flex-row gap-1 -m-3 items-center`}>
+          <Link href="/" className={`text-base font-medium ${activePage===1 ? 'text-indigo-500':'text-gray-500'} dark:hover:text-white hover:text-gray-900 flex flex-row gap-1 -m-3 items-center`}>
           <HomeIcon className={`h-5 w-5 flex-shrink-0 ${activePage===1 ? 'text-indigo-500':'text-gray-500'}`}/>
               Home
-            </a>
+            </Link>
             </div>
             <div className="hidden space-x-10 md:flex">
-          <a href="/Projects"  className={`text-base font-medium ${activePage===2 ? 'text-indigo-500':'text-gray-500'} dark:hover:text-white hover:text-gray-900 flex flex-row gap-1 -m-3 items-center`}>
+          <Link href="/Projects"  className={`text-base font-medium ${activePage===2 ? 'text-indigo-500':'text-gray-500'} dark:hover:text-white hover:text-gray-900 flex flex-row gap-1 -m-3 items-center`}>
           <CodeBracketIcon className={`h-5 w-5 flex-shrink-0 ${activePage===2 ? 'text-indigo-500':'text-gray-500'}`}/>
               Projects
-            </a>
+            </Link>
             </div>
             <div className="hidden space-x-10 md:flex">
-          <a href="/Information"  className={`text-base font-medium ${activePage===3 ? 'text-indigo-500':'text-gray-500'} dark:hover:text-white hover:text-gray-900 flex flex-row gap-1 -m-3 items-center`}>
+          <Link href="/Information"  className={`text-base font-medium ${activePage===3 ? 'text-indigo-500':'text-gray-500'} dark:hover:text-white hover:text-gray-900 flex flex-row gap-1 -m-3 items-center`}>
           <UserIcon className={`h-5 w-5 flex-shrink-0 ${activePage===3 ? 'text-indigo-500':'text-gray-500'}`}/>
               Information
-            </a>
+            </Link>
             </div>
 
          

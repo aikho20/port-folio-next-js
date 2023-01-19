@@ -14,15 +14,14 @@ export default function Projects() {
     <div className='fixed w-10 z-10 right-0 bg-transparent'>
       <SocialMedia/></div>
     <div class="container mx-auto max-w-7xl px-6 p-1 grid grid-cols-1 md:grid-cols-2 gap-4 lg:grid-cols-4 dark:bg-black-400">
-    {projects.map(items=>{
+    {projects.map((items,index)=>{
       return(
-<div class="my-2 max-w-full md:max-w-2/4  lg:max-w-1/4 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+<div key={index} class="my-2 max-w-full md:max-w-2/4  lg:max-w-1/4 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
       <div class="p-5" key={items.id}>
-        <a href="#">
           <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             {items.title}
           </h5>
-        </a>
+      
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
           {items.description}
         </p>
