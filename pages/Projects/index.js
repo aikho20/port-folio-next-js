@@ -62,7 +62,7 @@ export default function Projects() {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <div className="fixed inset-0 bg-black bg-opacity-25" />
+            <div className="fixed inset-0 bg-opacity-25" />
           </Transition.Child>
 
           <div className="fixed inset-0 overflow-y-auto">
@@ -76,10 +76,10 @@ export default function Projects() {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-full max-w-xl transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className="w-full max-w-xl transform overflow-hidden rounded-2xl bg-white dark:bg-gray-900 p-6 text-left align-middle shadow-xl transition-all">
                   <Dialog.Title
                     as="h3"
-                    className="text-lg font-medium leading-6 text-gray-900"
+                    className="text-lg font-medium leading-6 text-gray-900 dark:text-white"
                   >
                     Project Title
                   </Dialog.Title>
@@ -90,21 +90,21 @@ export default function Projects() {
                     <p class="mb-2 text-md mt-2 font-semibold text-gray-900 dark:text-white">Key and Responsibilities:</p>
 <ul class="max-w-md text-gray-500 list-disc list-inside dark:text-gray-400 text-sm">
     <li>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+    Client-Side Development.
     </li>
     <li>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+    Ensure Browser Compatibility.
     </li>
     <li>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+    Test Website for usability.
     </li>
 </ul>
                   </div>
     <Carousel/>
-                  <div className="mt-4">
+                  <div className="mt-4 ">
                     <button
                       type="button"
-                      className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                      className="inline-flex justify-center rounded-md border border-transparent bg-gray-200 dark:bg-gray-400  px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 "
                       onClick={()=>{setIsopen(!isOpen)}}
                     >
                       Close
