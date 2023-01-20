@@ -9,6 +9,9 @@ import Link from 'next/link';
 
 export default function Projects() {
   const [isOpen,setIsopen]=useState(false)
+  const [title,setTitle]=useState('')
+  const [description,setDescription]=useState('')
+  
   return (
   <>
     <Header activePage={2}/>
@@ -23,11 +26,13 @@ export default function Projects() {
             {items.title}
           </h5>
       
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 truncate">
           {items.description}
         </p>
         <button
           onClick={()=>{
+            setTitle(items.title)
+            setDescription(items.description)
             setIsopen(!isOpen)
           }}
           class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
@@ -81,11 +86,12 @@ export default function Projects() {
                     as="h3"
                     className="text-lg font-medium leading-6 text-gray-900 dark:text-white"
                   >
-                    Project Title
+                    {title}
                   </Dialog.Title>
                   <div className="mt-2">
+                  <Carousel/>
                     <p className="text-sm text-gray-500">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    {description}
                     </p>
                     <p class="mb-2 text-md mt-2 font-semibold text-gray-900 dark:text-white">Key and Responsibilities:</p>
 <ul class="max-w-md text-gray-500 list-disc list-inside dark:text-gray-400 text-sm">
@@ -100,7 +106,7 @@ export default function Projects() {
     </li>
 </ul>
                   </div>
-    <Carousel/>
+  
                   <div className="mt-4 ">
                     <button
                       type="button"
