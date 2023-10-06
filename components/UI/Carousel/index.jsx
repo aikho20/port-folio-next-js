@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-function Carouse({resources}) {
+function Carousel({resources}) {
   return (
     <div className='flex flex-row overflow-x-scroll w-100'>
       {resources?.map((resource,index)=>(
@@ -15,4 +15,4 @@ function Carouse({resources}) {
   )
 }
 
-export default Carouse
+export default Carousel
