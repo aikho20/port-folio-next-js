@@ -166,7 +166,7 @@ export default function Header({activePage}) {
           <div className="hidden space-x-1 md:flex">
             <p className='text-gray-500 mr-2'>Dark Mode</p>
           <Switch
-      checked={enabled}
+      checked={!enabled}
       onChange={()=>{
         setEnabled(!enabled)
         setTheme(theme==='light'?'dark':'light')

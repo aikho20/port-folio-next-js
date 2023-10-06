@@ -1,21 +1,90 @@
-export const projects=[{
-    id:1,
-    title:'WarnYa',
-    description:'A messaging app that enables users to instant message and connect with each other through their mobile devices, available in IOS and Android.'
-},{
-    id:2,
-    title:'Talis App Systems',
-    description:'TALIS Systems is designed for small and micro business. Our fleet asset management platform brings our customer to their driver closer.'
-},{
-    id:3,
-    title:'Strata Plan',
-    description:'A strata scheme is a building or group of buildings that has been divided into lots which may be individual apartments, office, industrial, commercial or retail units, townhouses or houses. When a person buys a lot, they also share ownership of common property with other lot owners.',
-},{
-    id:4,
-    title:'Dlist Application',
-    description:'The Digital Library of Information Science and Technology (DLIST) archive is a cross-institutional, subject-based, open access digital archive for the Information Sciences, including Archives and Records Management, Library and Information Science, Information Systems, Digital Curation, Museum Informatics, records management and other critical information infrastructures.'
-},{
-    id:5,
-    title:'Robinsons Bank - Back Office',
-    description:'Robinsons Bank, the financial services arm of the JG Summit Group of Companies, is one of the fastest growing commercial banks in the Philippines in terms of capitalization and asset size. The bank is 60.0% owned by JG Summit Capital Services Corp. and 40.0% owned by Robinsons Retail Holdings, Inc., a listed company since November 2013.'
-}]
+export const projects = [
+  {
+    id: 1,
+    title: "WarnYa",
+    description:
+      "A messaging app that enables users to instant message and connect with each other through their mobile devices, available in IOS and Android.",
+    images: [
+      "/WarnyaApp/Screenshot_2022_0526_132108.jpg",
+      "/WarnyaApp/Screenshot_2022_0526_132130.jpg",
+      "/WarnyaApp/Screenshot_2022_0526_132147.jpg",
+      "/WarnyaApp/Screenshot_2022_0526_132203.jpg",
+      "/WarnyaApp/Screenshot_2022_0526_132219.jpg",
+      "/WarnyaApp/Screenshot_2022_0526_132240.jpg",
+      "/WarnyaApp/Screenshot_2022_0526_132255.jpg",
+      "/WarnyaApp/Screenshot_2022_0526_132310.jpg",
+      "/WarnyaApp/Screenshot_2022_0526_132323.jpg",
+      "/WarnyaApp/Screenshot_2022_0526_132341.jpg",
+      "/WarnyaApp/Screenshot_2022_0526_132400.jpg",
+      "/WarnyaApp/Screenshot_2022_0526_132417.jpg",
+      "/WarnyaApp/Screenshot_2022_0526_132435.jpg",
+      "/WarnyaApp/Screenshot_2022_0526_132452.jpg",
+      "/WarnyaApp/Screenshot_2022_0526_132502.jpg",
+      "/WarnyaApp/Screenshot_2022_0526_132514.jpg",
+    ],
+  },
+  {
+    id: 2,
+    title: "Talis App Systems",
+    description:
+      "TALIS Systems is designed for small and micro business. Our fleet asset management platform brings our customer to their driver closer.",
+    images: [
+      "/Talisapp/Screenshot_20210907_160731.jpg",
+      "/Talisapp/Screenshot_20210907_153527.jpg",
+      "/Talisapp/Screenshot_20210906_124243.jpg",
+      "/Talisapp/Screenshot_20210903_121939.jpg",
+      "/Talisapp/Screenshot_20210903_121649.jpg",
+      "/Talisapp/Screenshot_20210903_121644.jpg",
+      "/Talisapp/Screenshot_20210903_121620.jpg",
+      "/Talisapp/Screenshot_20210903_121536.jpg",
+      "/Talisapp/Screenshot_20210903_121527.jpg",
+      "/Talisapp/Screenshot_20210903_121520.jpg",
+      "/Talisapp/Screenshot_20210903_121505.jpg",
+      "/Talisapp/Screenshot_20210903_121458.jpg",
+      "/Talisapp/Screenshot_20210903_121452.jpg",
+      "/Talisapp/Screenshot_20210903_121439.jpg",
+      "/Talisapp/Screenshot_20210902_131923.jpg",
+      "/Talisapp/Screenshot_20210828_195004.jpg",
+    ],
+  },
+  {
+    id: 3,
+    title: "Strata Plan",
+    description:
+      "A strata scheme is a building or group of buildings that has been divided into lots which may be individual apartments, office, industrial, commercial or retail units, townhouses or houses. When a person buys a lot, they also share ownership of common property with other lot owners.",
+    images: ["/strata/strataplan.com.au_.png"],
+  },
+  {
+    id: 4,
+    title: "Dlist Application",
+    description:
+      "The Digital Library of Information Science and Technology (DLIST) archive is a cross-institutional, subject-based, open access digital archive for the Information Sciences, including Archives and Records Management, Library and Information Science, Information Systems, Digital Curation, Museum Informatics, records management and other critical information infrastructures.",
+    image: [],
+  },
+  {
+    id: 5,
+    title: "Robinsons Bank - Back Office",
+    description:
+      "Robinsons Bank, the financial services arm of the JG Summit Group of Companies, is one of the fastest growing commercial banks in the Philippines in terms of capitalization and asset size. The bank is 60.0% owned by JG Summit Capital Services Corp. and 40.0% owned by Robinsons Retail Holdings, Inc., a listed company since November 2013.",
+    images: [
+      "/robinsons/Robinsons-Bank-logo.jpg",
+      "/robinsons/Robinsons-Bank-logo1.png",
+      "/robinsons/Robinsons-Bank-logo2.png",
+      "/robinsons/Robinsons-Bank-logo3.png",
+      "/robinsons/Robinsons-Bank-logo4.png",
+      "/robinsons/Robinsons-Bank-logo5.png",
+      "/robinsons/Robinsons-Bank-logo6.png",
+      "/robinsons/Robinsons-Bank-logo7.png",
+      "/robinsons/Robinsons-Bank-logo8.png",
+      "/robinsons/Robinsons-Bank-logo9.png",
+      "/robinsons/Robinsons-Bank-logo10.png",
+    ],
+  },
+  {
+    id: 6,
+    title: "MetroDeal",
+    description:
+      "A undisputed market leader in Southeast Asia when it comes to discount vouchers, MetroDeal works hard to present you the best deals on the best things to do, see, eat, and buy in your city.",
+    images: ["/metrodeal/metrodeal1.png", "/metrodeal/metrodeal3.png"],
+  },
+];

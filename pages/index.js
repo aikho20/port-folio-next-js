@@ -91,10 +91,10 @@ export default function Home() {
         <div className="p-1 flex flex-col justify-evenly md:flex-row">
           <div className="p-2 md:w-2/4 w-full flex flex-col item-start md:items-end">
             <h1 className="p-2">Skills and Technology</h1>
-            <ul class="w-full space-y-1 text-gray-500 list-inside dark:text-gray-400">
+            <ul className="w-full space-y-1 text-gray-500 list-inside dark:text-gray-400">
               
             {skillSet.map(items=>{
-              return(           <li key={items.title}class="flex items-center">
+              return(           <li key={items.title}className="flex items-center">
                 <div className="flex flex-col w-full item-start md:items-end px-5">
                   {items.title}
                   <div className="w-full bg-gray-200 rounded-full h-4 mb-4 dark:bg-gray-700 mt-2">
@@ -109,19 +109,19 @@ export default function Home() {
           </div>
           <div className="p-2 md:w-2/4 w-full  block">
             <h1 className="p-2">Work Experience</h1>
-            <ol class="relative border-l border-gray-200 dark:border-gray-700">
+            <ol className="relative border-l border-gray-200 dark:border-gray-700">
             {experience.map(items=>{
               return(
                 
-              <li key={items.title} class="mb-10 ml-4">
-                <div class="absolute w-3 h-3 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+              <li key={items.title} className="mb-10 ml-4">
+                <div className="absolute w-3 h-3 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                   {items.date}
                 </time>
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
                   {items.title}
                 </h3>
-                <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 whitespace-pre-wrap">
+                <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 whitespace-pre-wrap">
              {items.description}
                 </p>
                 </li>

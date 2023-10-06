@@ -34,8 +34,11 @@ export const skillSet = [
   },
 ];
 
-export const experience=[{
-    title:"H2 Software Consultant Services",date:'May 2022 - Present',description:'Application Developer - Front End Developer'}
+export const experience=[
+  {
+    title:"Astropolis Inc",date:'March 2023 - Present',description:'Web Application Developer'},
+  {
+    title:"H2 Software Consultant Services",date:'May 2022 - May 2023',description:'Web Application Developer'}
     ,
     {
       title:"Semicolon Studios",date:'Nov 2021 - May 2022',description:'Freelance Mobile App Developer.\nFreelance Web Application Developer.\nWord-Press Developer.'}

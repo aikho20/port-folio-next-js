@@ -1,44 +1,6 @@
-import Link from 'next/link';
-import { useState, useRef, useEffect } from 'react';
-const Carousel = () => {
-    const resources =[
-        {
-          "title": "Find me on Mastodon",
-          "link": "https://indieweb.social/@kendalmintcode",
-          "imageUrl": "https://placeimg.com/300/300/any"
-        },
-        {
-          "title": "Welcome to Ark Labs",
-          "link": "https://ark-labs.co.uk",
-          "imageUrl": "https://placeimg.com/300/300/animals"
-        },
-        {
-          "title": "Some sort of third title",
-          "link": "https://indieweb.social/@kendalmintcode",
-          "imageUrl": "https://placeimg.com/300/300/architecture"
-        },
-    
-        {
-          "title": "Super item number the last",
-          "link": "https://indieweb.social/@kendalmintcode",
-          "imageUrl": "https://placeimg.com/300/300/tech"
-        }, {
-            "title": "Welcome to Ark Labs",
-            "link": "https://ark-labs.co.uk",
-            "imageUrl": "https://placeimg.com/300/300/animals"
-          },
-          {
-            "title": "Some sort of third title",
-            "link": "https://indieweb.social/@kendalmintcode",
-            "imageUrl": "https://placeimg.com/300/300/architecture"
-          },
-      
-          {
-            "title": "Super item number the last",
-            "link": "https://indieweb.social/@kendalmintcode",
-            "imageUrl": "https://placeimg.com/300/300/tech"
-          }
-      ]
+import Link from "next/link";
+import { useState, useRef, useEffect } from "react";
+const Carousel = ({ resources }) => {
   const maxScrollWidth = useRef(0);
   const [currentIndex, setCurrentIndex] = useState(0);
   const carousel = useRef(null);
@@ -59,11 +21,11 @@ const Carousel = () => {
   };
 
   const isDisabled = (direction) => {
-    if (direction === 'prev') {
+    if (direction === "prev") {
       return currentIndex <= 0;
     }
 
-    if (direction === 'next' && carousel.current !== null) {
+    if (direction === "next" && carousel.current !== null) {
       return (
         carousel.current.offsetWidth * currentIndex >= maxScrollWidth.current
       );
@@ -85,14 +47,13 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div className="carousel my-12 mx-auto">
-
+    <div className="carousel my-2 mx-auto">
       <div className="relative overflow-hidden">
         <div className="flex justify-between absolute top left w-full h-full">
           <button
             onClick={movePrev}
             className="hover:bg-blue-900/75 text-white w-10 h-full text-center opacity-75 hover:opacity-100 disabled:opacity-25 disabled:cursor-not-allowed z-10 p-0 m-0 transition-all ease-in-out duration-300"
-            disabled={isDisabled('prev')}
+            disabled={isDisabled("prev")}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -113,7 +74,7 @@ const Carousel = () => {
           <button
             onClick={moveNext}
             className="hover:bg-blue-900/75 text-white w-10 h-full text-center opacity-75 hover:opacity-100 disabled:opacity-25 disabled:cursor-not-allowed z-10 p-0 m-0 transition-all ease-in-out duration-300"
-            disabled={isDisabled('next')}
+            disabled={isDisabled("next")}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -134,23 +95,25 @@ const Carousel = () => {
         </div>
         <div
           ref={carousel}
-          className="carousel-container relative flex gap-1 overflow-hidden scroll-smooth snap-x snap-mandatory touch-pan-x z-0"
+          className="carousel-container relative flex w-full overflow-hidden scroll-smooth snap-x snap-mandatory touch-pan-x z-0 bg-gray-700"
         >
-          {resources.map((resource, index) => {
+          {resources?.map((resource, index) => {
             return (
               <div
                 key={index}
-                className="carousel-item text-center relative w-64 h-64 snap-start"
+                className="carousel-item relative w-100 h-64 snap-center p-2"
               >
                 <Link
-                  href='#'
+                  href={resource}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="h-full w-full aspect-square block bg-origin-padding bg-left-top bg-cover bg-no-repeat z-0"
-                  style={{ backgroundImage: `url(${resource.imageUrl || ''})` }}
                 >
                   <img
-                    src={resource.imageUrl || ''}
-                    alt={resource.title}
-                    className="w-full aspect-square hidden"
+                    src={resource}
+                    alt={resource}
+                    className="w-full h-full"
+                    style={{ objectFit: "contain" }}
                   />
                 </Link>
               </div>
