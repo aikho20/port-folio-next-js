@@ -86,8 +86,18 @@ export default function Projects() {
                       </p>
                       <ul className="max-w-md text-gray-500 list-disc list-inside dark:text-gray-400 text-sm">
                         <li>Client-Side Development.</li>
-                        <li>Ensure Browser Compatibility.</li>
+                        <li>Ensure Browser/Devices Compatibility.</li>
                         <li>Test Website for usability.</li>
+                        <li>Maintain and improve the application</li>
+                        <li>Optimize applications for maximum speed</li>
+                        <li>Design mobile-based and website features</li>
+                        <li>Collaborate with back-end developers and web designers to improve usability</li>
+                        <li>Get feedback from, and build solutions for, users and customers</li>
+                        <li>Write functional requirement documents and guides</li>
+                        <li>Create quality mockups and prototypes</li>
+                        <li>Help back-end developers with coding and troubleshooting</li>
+                        <li>Ensure high quality graphic standards and brand consistency</li>
+                        <li>Stay up-to-date on emerging technologies</li>
                       </ul>
                     </div>
 
