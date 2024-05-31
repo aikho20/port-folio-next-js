@@ -85,6 +85,6 @@ export const projects = [
     title: "MetroDeal",
     description:
       "A undisputed market leader in Southeast Asia when it comes to discount vouchers, MetroDeal works hard to present you the best deals on the best things to do, see, eat, and buy in your city.",
-    images: ["/metrodeal/metrodeal1.png", "/metrodeal/metrodeal3.png"],
+    images: ["/metrodeal/metrodeal1.png", "/metrodeal/metrodeal2.png","/metrodeal/metrodeal3.png", "/metrodeal/metrodeal4.png","/metrodeal/metrodeal5.png", "/metrodeal/metrodeal6.png","/metrodeal/metrodeal7.png", "/metrodeal/metrodeal8.png","/metrodeal/metrodeal9.png", "/metrodeal/metrodeal10.png","/metrodeal/metrodeal11.png", "/metrodeal/metrodeal12.png","/metrodeal/metrodeal13.png", "/metrodeal/metrodeal14.png","/metrodeal/metrodeal15.png", "/metrodeal/metrodeal15.png","/metrodeal/metrodeal17.png", "/metrodeal/metrodeal18.png","/metrodeal/metrodeal19.png", "/metrodeal/metrodeal20.png"],
   },
 ];

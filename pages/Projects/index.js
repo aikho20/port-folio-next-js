@@ -18,7 +18,7 @@ export default function Projects() {
       <div className="fixed w-10 z-10 right-0 bg-transparent">
         <SocialMedia />
       </div>
-      <div className="container mx-auto max-w-7xl px-6 p-1 grid grid-cols-1 md:grid-cols-2 gap-4 lg:grid-cols-3 dark:bg-black-400">
+      <div className="container w-100 mx-auto px-6 p-1 grid grid-cols-1 md:grid-cols-2 gap-4 lg:grid-cols-3 dark:bg-black-400">
         {projects.map((items, index) => {
           return (
             <div
@@ -59,8 +59,8 @@ export default function Projects() {
               <div className="fixed inset-0 bg-opacity-25" />
             </Transition.Child>
 
-            <div className="fixed inset-0 overflow-y-auto">
-              <div className="flex min-h-full min-w-full items-center justify-center p-4 text-center">
+            <div className="fixed inset-0 overflow-y-auto flex align-center justify-center">
+              <div className="flex max-w-[700px] min-w-[300px] items-center justify-center p-4 text-center">
                 <Transition.Child
                   as={Fragment}
                   enter="ease-out duration-300"
@@ -79,26 +79,8 @@ export default function Projects() {
                     </Dialog.Title>
                     <Carousel resources={images} />
                     <div className="mt-2">
+                      <p className="text-md text-gray-500 py-2 text-bolder">About</p>
                       <p className="text-sm text-gray-500">{description}</p>
-
-                      <p className="mb-2 text-md mt-2 font-semibold text-gray-900 dark:text-white">
-                        Key and Responsibilities:
-                      </p>
-                      <ul className="max-w-md text-gray-500 list-disc list-inside dark:text-gray-400 text-sm">
-                        <li>Client-Side Development.</li>
-                        <li>Ensure Browser/Devices Compatibility.</li>
-                        <li>Test Website for usability.</li>
-                        <li>Maintain and improve the application</li>
-                        <li>Optimize applications for maximum speed</li>
-                        <li>Design mobile-based and website features</li>
-                        <li>Collaborate with back-end developers and web designers to improve usability</li>
-                        <li>Get feedback from, and build solutions for, users and customers</li>
-                        <li>Write functional requirement documents and guides</li>
-                        <li>Create quality mockups and prototypes</li>
-                        <li>Help back-end developers with coding and troubleshooting</li>
-                        <li>Ensure high quality graphic standards and brand consistency</li>
-                        <li>Stay up-to-date on emerging technologies</li>
-                      </ul>
                     </div>
 
                     <div className="mt-4 ">
