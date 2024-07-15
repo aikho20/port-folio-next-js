@@ -15,15 +15,15 @@ export default function Home() {
         <div className="px-6 lg:px-8">
           <div className="mx-auto max-w-3xl pt-20 pb-32 sm:pt-20 sm:pb-40">
             <div>
-              <div className="sm:mb-8 sm:flex sm:justify-center">
+              <div className="sm:mb-8 sm:flex sm:justify-center items-center w-100">
                 <img
                   src="/428609452_7589859704366118_4207315446027319890_n (1).jpg"
-                  className="h-[290px] w-[290px] rounded-full"
+                  className="h-[290px] w-[290px] rounded-full mb-2"
                 />
               </div>
               <div>
                 <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">
-                  Hi my name is Marco and welcome to my profile.
+                  Hi my name is Marco Ico and welcome to my profile.
                 </h1>
                 <p className="mt-6 leading-8 text-gray-600 sm:text-center text-md">
                   I am a passionate and skilled fullstack developer specializing

@@ -40,7 +40,7 @@ export const skillSet = [
     performance: "90%",
   },
   {
-    title: "Bootsrap",
+    title: "Bootstrap",
     performance: "100%",
   },
   {
@@ -48,7 +48,7 @@ export const skillSet = [
     performance: "90%",
   },
   {
-    title: "HTML , CSS",
+    title: "HTML , CSS , SASS",
     performance: "90%",
   },
   {
