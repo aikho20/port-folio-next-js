@@ -1,50 +1,41 @@
-
-import Header from '../components/Layouts/Header'
-import { experience, skillSet } from '../data/home';
-import SocialMedia from '../components/Layouts/SocialMedial'
-import { useTheme } from 'next-themes';
-import Link from 'next/link';
+import Header from "../components/Layouts/Header";
+import { experience, skillSet } from "../data/home";
+import SocialMedia from "../components/Layouts/SocialMedial";
+import { useTheme } from "next-themes";
+import Link from "next/link";
 
 export default function Home() {
-
-  
   return (
     <>
-      <Header activePage={1}/>
-      <div className='fixed w-10 z-10 right-0 bg-transparent'>
-      <SocialMedia/></div>
-      <main className='dark:bg-black-400 mx-auto max-w-7xl px-6 '>
+      <Header activePage={1} />
+      <div className="fixed w-10 z-10 right-0 bg-transparent">
+        <SocialMedia />
+      </div>
+      <main className="dark:bg-black-400 mx-auto max-w-7xl px-6 ">
         <div className="px-6 lg:px-8">
           <div className="mx-auto max-w-3xl pt-20 pb-32 sm:pt-20 sm:pb-40">
             <div>
-              <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-                <div className="relative overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20 dark:ring-white">
-                  <span className="text-gray-600">
-                    Check personal blog post.{" "}
-                    <Link href="/" className="font-semibold text-indigo-600">
-                      <span className="absolute inset-0" aria-hidden="true" />
-                      View <span aria-hidden="true">&rarr;</span>
-                    </Link>
-                  </span>
-                </div>
+              <div className="sm:mb-8 sm:flex sm:justify-center">
+                <img
+                  src="/428609452_7589859704366118_4207315446027319890_n (1).jpg"
+                  className="h-[290px] w-[290px] rounded-full"
+                />
               </div>
               <div>
                 <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">
                   Hi my name is Marco and welcome to my profile.
                 </h1>
-                <p className="mt-6 text-lg leading-8 text-gray-600 sm:text-center">
-                A Front-End Developer is responsible for developing new user-facing features, determining the structure and design of web pages, building reusable codes, optimizing page loading times, and using a variety of markup languages to create the web pages.
+                <p className="mt-6 leading-8 text-gray-600 sm:text-center text-md">
+                  I am a passionate and skilled fullstack developer specializing
+                  in modern web technologies. My expertise lies in using
+                  Next.js, React.js, MongoDB, and Redux to build robust and
+                  scalable web applications. With a strong foundation in both
+                  front-end and back-end development, I excel at creating
+                  seamless and efficient user experiences. I am dedicated to
+                  continuous learning and staying updated with the latest
+                  industry trends to deliver high-quality solutions.
                 </p>
                 <div className="mt-8 flex gap-x-4 sm:justify-center">
-                  <Link
-                    href="mailto:marco.deguzman.ico@gmail.com"
-                    className="inline-block rounded-lg bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-0 hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:ring-pink-700"
-                  >
-                    Send Message{" "}
-                    <span className="text-indigo-200" aria-hidden="true">
-                      &rarr;
-                    </span>
-                  </Link>
                   <Link
                     href="/Information"
                     className="inline-block rounded-lg px-4 py-1.5 text-base font-semibold leading-7 text-gray-900 dark:text-white ring-1 ring-gray-900/10 hover:ring-gray-900/20 dark:ring-white"
@@ -54,7 +45,6 @@ export default function Home() {
                       &rarr;
                     </span>
                   </Link>
-          
                 </div>
               </div>
               <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
@@ -91,50 +81,50 @@ export default function Home() {
         <div className="p-1 flex flex-col justify-evenly md:flex-row">
           <div className="p-2 md:w-2/4 w-full flex flex-col item-start md:items-end">
             <h1 className="p-2">Skills and Technology</h1>
-            <ul className="w-full space-y-1 text-gray-500 list-inside dark:text-gray-400">
-              
-            {skillSet.map(items=>{
-              return(           <li key={items.title}className="flex items-center">
-                <div className="flex flex-col w-full item-start md:items-end px-5">
-                  {items.title}
-                  <div className="w-full bg-gray-200 rounded-full h-4 mb-4 dark:bg-gray-700 mt-2">
-                    <div className={`bg-indigo-600 h-4 rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500`} style={{width:items.performance}}></div>
-                  </div>
-                </div>
-              </li>
-              )
-            })}
-              
+            <ul className="w-full text-gray-500 list-inside dark:text-gray-400">
+              {skillSet.map((items) => {
+                return (
+                  <li key={items.title} className="flex items-center">
+                    <div className="flex flex-col w-full item-start md:items-end px-5">
+                      <div className="flex flex-row items-center justify-center space-x-2">
+                        <p className=" text-sm font-semibold">{items.title}</p>
+                        <p className="text-xs">{items.performance}</p>
+                      </div>
+                      <div className="w-full bg-gray-200 h-1 rounded-full h-4 mb-4 dark:bg-gray-700 mt-2">
+                        <div
+                          className={`bg-indigo-400 h-1 rounded-full`}
+                          style={{ width: items.performance }}
+                        />
+                      </div>
+                      {}
+                    </div>
+                  </li>
+                );
+              })}
             </ul>
           </div>
           <div className="p-2 md:w-2/4 w-full  block">
             <h1 className="p-2">Work Experience</h1>
             <ol className="relative border-l border-gray-200 dark:border-gray-700">
-            {experience.map(items=>{
-              return(
-                
-              <li key={items.title} className="mb-10 ml-4">
-                <div className="absolute w-3 h-3 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                  {items.date}
-                </time>
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                  {items.title}
-                </h3>
-                <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 whitespace-pre-wrap">
-             {items.description}
-                </p>
-                </li>
-              )
-            })}
-           
-             
-              
+              {experience.map((items) => {
+                return (
+                  <li key={items.title} className="mb-10 ml-4">
+                    <div className="absolute w-3 h-3 bg-primary to-indigo-500 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                    <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                      {items.date}
+                    </time>
+                    <h3 className="text-md font-semibold text-gray-900 dark:text-white">
+                      {items.title}
+                    </h3>
+                    <p className="mb-4 text-base font-normal text-md text-gray-500 dark:text-gray-400 whitespace-pre-wrap">
+                      {items.description}
+                    </p>
+                  </li>
+                );
+              })}
             </ol>
           </div>
-          
         </div>
-        
       </main>
     </>
   );

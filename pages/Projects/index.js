@@ -29,6 +29,7 @@ export default function Projects() {
                 title={items.title}
                 description={items.description}
                 resources={items.images}
+                tech={items.tools}
                 onClick={() => {
                   setTitle(items.title);
                   setDescription(items.description);
@@ -79,7 +80,9 @@ export default function Projects() {
                     </Dialog.Title>
                     <Carousel resources={images} />
                     <div className="mt-2">
-                      <p className="text-md text-gray-500 py-2 text-bolder">About</p>
+                      <p className="text-md text-gray-500 py-2 text-bolder">
+                        About
+                      </p>
                       <p className="text-sm text-gray-500">{description}</p>
                     </div>
 
