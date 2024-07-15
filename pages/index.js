@@ -90,9 +90,9 @@ export default function Home() {
                         <p className=" text-sm font-semibold">{items.title}</p>
                         <p className="text-xs mx-2">{items.performance}</p>
                       </div>
-                      <div className="w-full bg-gray-200 h-2 rounded-full h-4 mb-4 dark:bg-gray-700 mt-2">
+                      <div className="w-full bg-gray-200 h-1 rounded-full mb-4 dark:bg-gray-700 mt-2">
                         <div
-                          className={`bg-indigo-400 h-2 rounded-full`}
+                          className={`bg-indigo-400 h-1 rounded-full`}
                           style={{ width: items.performance }}
                         />
                       </div>
