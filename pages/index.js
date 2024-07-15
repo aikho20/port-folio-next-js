@@ -85,14 +85,14 @@ export default function Home() {
               {skillSet.map((items) => {
                 return (
                   <li key={items.title} className="flex items-center">
-                    <div className="flex flex-col w-full item-start md:items-end px-5">
-                      <div className="flex flex-row items-center justify-center space-x-2">
+                    <div className="flex flex-col w-full item-start md:items-end">
+                      <div className="flex flex-row items-center justify-center">
                         <p className=" text-sm font-semibold">{items.title}</p>
-                        <p className="text-xs">{items.performance}</p>
+                        <p className="text-xs mx-2">{items.performance}</p>
                       </div>
-                      <div className="w-full bg-gray-200 h-1 rounded-full h-4 mb-4 dark:bg-gray-700 mt-2">
+                      <div className="w-full bg-gray-200 h-2 rounded-full h-4 mb-4 dark:bg-gray-700 mt-2">
                         <div
-                          className={`bg-indigo-400 h-1 rounded-full`}
+                          className={`bg-indigo-400 h-2 rounded-full`}
                           style={{ width: items.performance }}
                         />
                       </div>
