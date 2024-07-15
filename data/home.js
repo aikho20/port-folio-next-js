@@ -7,31 +7,25 @@ export const skillSet = [
     title: "React JS",
     performance: "90%",
   },
-
   {
     title: "React Native",
     performance: "70%",
   },
   {
-    title: "Bootsrap",
-    performance: "100%",
+    title: "MongoDb",
+    performance: "80%",
   },
   {
-    title: "HTML , CSS",
-    performance: "90%",
-  },
-
-  {
-    title: "Redux",
-    performance: "100%",
-  },
-  {
-    title: "Tailwind",
-    performance: "90%",
+    title: "MySql",
+    performance: "70%",
   },
   {
     title: "Typescript",
     performance: "80%",
+  },
+  {
+    title: "Redux",
+    performance: "100%",
   },
   {
     title: "RTK Query",
@@ -42,7 +36,27 @@ export const skillSet = [
     performance: "100%",
   },
   {
+    title: "SEO",
+    performance: "90%",
+  },
+  {
+    title: "Bootsrap",
+    performance: "100%",
+  },
+  {
+    title: "Tailwind",
+    performance: "90%",
+  },
+  {
+    title: "HTML , CSS",
+    performance: "90%",
+  },
+  {
     title: "Material UI",
+    performance: "90%",
+  },
+  {
+    title: "Shadcn",
     performance: "90%",
   },
 ];

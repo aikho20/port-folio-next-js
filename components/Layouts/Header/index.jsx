@@ -108,12 +108,12 @@ export default function Header({ activePage }) {
             <Link
               href="/Projects"
               className={`text-base font-medium ${
-                activePage === 2 ? "text-indigo-500" : "text-gray-500"
+                activePage === 2 ? "text-indigo-400" : "text-gray-500"
               } dark:hover:text-white hover:text-gray-900 flex flex-row gap-1 -m-3 items-center`}
             >
               <CodeBracketIcon
                 className={`h-5 w-5 flex-shrink-0 ${
-                  activePage === 2 ? "text-indigo-500" : "text-gray-500"
+                  activePage === 2 ? "text-indigo-400" : "text-gray-500"
                 }`}
               />
               Projects
@@ -273,7 +273,7 @@ export default function Header({ activePage }) {
                       className="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50 dark:hover:bg-gray-800"
                     >
                       <item.icon
-                        className="h-6 w-6 flex-shrink-0 text-indigo-600"
+                        className="h-6 w-6 flex-shrink-0 text-indigo-400"
                         aria-hidden="true"
                       />
                       <span className="ml-3 text-base font-medium text-gray-900 dark:text-white">
