@@ -1,63 +1,102 @@
+import { DiMongodb, DiMysql } from "react-icons/di";
+import {
+  RiBootstrapFill,
+  RiCss3Fill,
+  RiHtml5Fill,
+  RiNextjsFill,
+  RiReactjsFill,
+  RiSeoFill,
+  RiTailwindCssFill,
+} from "react-icons/ri";
+import {
+  SiJsonwebtokens,
+  SiMaterialdesign,
+  SiRedux,
+  SiShadcnui,
+  SiTypescript,
+} from "react-icons/si";
+
 export const skillSet = [
   {
     title: "NEXT Js",
     performance: "90%",
+    icon: RiNextjsFill,
   },
   {
     title: "React JS",
     performance: "90%",
+    icon: RiReactjsFill,
   },
   {
     title: "React Native",
     performance: "70%",
+    icon: RiReactjsFill,
   },
   {
     title: "MongoDb",
     performance: "80%",
+    icon: DiMongodb,
   },
   {
     title: "MySql",
     performance: "70%",
+    icon: DiMysql,
   },
   {
     title: "Typescript",
     performance: "80%",
+    icon: SiTypescript,
   },
   {
     title: "Redux",
     performance: "100%",
+    icon: SiRedux,
   },
   {
     title: "RTK Query",
     performance: "100%",
+    icon: SiRedux,
   },
   {
     title: "JWT",
     performance: "100%",
+    icon: SiJsonwebtokens,
   },
   {
     title: "SEO",
     performance: "90%",
+    icon: RiSeoFill,
   },
   {
     title: "Bootstrap",
     performance: "100%",
+    icon: RiBootstrapFill,
   },
   {
     title: "Tailwind",
     performance: "90%",
+    icon: RiTailwindCssFill,
   },
   {
-    title: "HTML , CSS , SASS",
+    title: "HTML",
     performance: "90%",
+    icon: RiHtml5Fill,
   },
+  {
+    title: "CSS/SCSS",
+    performance: "90%",
+    icon: RiCss3Fill,
+  },
+
   {
     title: "Material UI",
     performance: "90%",
+    icon: SiMaterialdesign,
   },
   {
     title: "Shadcn",
     performance: "90%",
+    icon: SiShadcnui,
   },
 ];
 

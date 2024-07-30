@@ -91,27 +91,27 @@ export default function Home() {
         <div className="p-1 flex flex-col justify-evenly md:flex-row">
           <div className="p-2 md:w-2/4 w-full flex flex-col item-start md:items-end">
             <h1 className="p-2">Skills and Technology</h1>
-            <ul className="w-full text-gray-500 list-inside dark:text-gray-400">
+            <div className="grid grid-cols-2 md:grid-cols-3">
               {skillSet.map((items) => {
+                const Icon = items.icon;
                 return (
-                  <li key={items.title} className="flex items-center">
-                    <div className="flex flex-col w-full item-start md:items-end">
-                      <div className="flex flex-row items-center justify-center">
-                        <p className=" text-sm font-semibold">{items.title}</p>
-                        <p className="text-xs mx-2">{items.performance}</p>
-                      </div>
+                  <div className="flex flex-col p-5 shadow-sm border m-2">
+                    <div className="flex flex-col items-center justify-center">
+                      <Icon className="h-8 w-8 mr-2" />
+                      <p className=" text-sm font-semibold">{items.title}</p>
+                    </div>
+                    {/* 
                       <div className="w-full bg-gray-200 h-1 rounded-full mb-4 dark:bg-gray-700 mt-2">
-                        <div
+                      <div
                           className={`bg-indigo-400 h-1 rounded-full`}
                           style={{ width: items.performance }}
                         />
                       </div>
-                      {}
-                    </div>
-                  </li>
+                      */}
+                  </div>
                 );
               })}
-            </ul>
+            </div>
           </div>
           <div className="p-2 md:w-2/4 w-full  block">
             <h1 className="p-2">Work Experience</h1>
