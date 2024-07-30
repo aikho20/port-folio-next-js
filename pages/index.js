@@ -99,7 +99,10 @@ export default function Home() {
               {skillSet.map((items) => {
                 const Icon = items.icon;
                 return (
-                  <div className="flex flex-col p-5 shadow-sm border m-2">
+                  <div
+                    className="flex flex-col p-5 shadow-sm border m-2"
+                    key={items.title}
+                  >
                     <div className="flex flex-col items-center justify-center">
                       <Icon className="h-8 w-8 mr-2" />
                       <p className=" text-sm font-semibold">{items.title}</p>
