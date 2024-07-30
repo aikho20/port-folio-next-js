@@ -4,6 +4,7 @@ import SocialMedia from "../components/Layouts/SocialMedial";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import { InboxIcon, PhoneIcon } from "@heroicons/react/24/outline";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -16,9 +17,12 @@ export default function Home() {
         <div className="px-6 lg:px-8">
           <div className="mx-auto max-w-3xl pt-20 pb-32 sm:pt-20 sm:pb-40">
             <div className="sm:mb-8 flex items-center justify-center w-100">
-              <img
+              <Image
+                height={400}
+                width={400}
+                quality={100}
                 src="/428609452_7589859704366118_4207315446027319890_n (1).jpg"
-                className="h-[290px] w-[290px] rounded-full mb-2 flex"
+                className="rounded-full mb-2 z-10"
               />
             </div>
             <div className="flex flex-col justify-around my-5">
