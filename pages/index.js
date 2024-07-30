@@ -22,7 +22,7 @@ export default function Home() {
                 width={400}
                 quality={100}
                 src="/428609452_7589859704366118_4207315446027319890_n (1).jpg"
-                className="rounded-full mb-2 z-10"
+                className="rounded-full mb-2 z-10 border-2 shadow-lg"
               />
             </div>
             <div className="flex flex-col justify-around my-5">
