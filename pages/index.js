@@ -100,21 +100,15 @@ export default function Home() {
                 const Icon = items.icon;
                 return (
                   <div
-                    className="flex flex-col p-5 shadow-sm border m-2"
+                    className="flex flex-col p-5 shadow-sm border m-2 rounded"
                     key={items.title}
                   >
                     <div className="flex flex-col items-center justify-center">
-                      <Icon className="h-8 w-8 mr-2" />
-                      <p className=" text-sm font-semibold">{items.title}</p>
+                      <Icon className="h-8 w-8" />
+                      <p className=" text-sm font-semibold my-2">
+                        {items.title}
+                      </p>
                     </div>
-                    {/* 
-                      <div className="w-full bg-gray-200 h-1 rounded-full mb-4 dark:bg-gray-700 mt-2">
-                      <div
-                          className={`bg-indigo-400 h-1 rounded-full`}
-                          style={{ width: items.performance }}
-                        />
-                      </div>
-                      */}
                   </div>
                 );
               })}
