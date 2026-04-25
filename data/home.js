@@ -18,92 +18,105 @@ import {
 
 export const skillSet = [
   {
-    title: "NEXT Js",
-    performance: "90%",
-    icon: RiNextjsFill,
-  },
-  {
-    title: "React JS",
-    performance: "90%",
-    icon: RiReactjsFill,
-  },
-  {
-    title: "React Native",
-    performance: "70%",
-    icon: RiReactjsFill,
-  },
-  {
-    title: "MongoDb",
-    performance: "80%",
-    icon: DiMongodb,
-  },
-  {
-    title: "MySql",
-    performance: "70%",
-    icon: DiMysql,
-  },
-  {
-    title: "Typescript",
-    performance: "80%",
-    icon: SiTypescript,
-  },
-  {
-    title: "Redux",
-    performance: "100%",
-    icon: SiRedux,
-  },
-  {
-    title: "RTK Query",
-    performance: "100%",
-    icon: SiRedux,
-  },
-  {
-    title: "JWT",
-    performance: "100%",
-    icon: SiJsonwebtokens,
-  },
-  {
-    title: "SEO",
-    performance: "90%",
-    icon: RiSeoFill,
-  },
-  {
-    title: "Bootstrap",
-    performance: "100%",
-    icon: RiBootstrapFill,
-  },
-  {
-    title: "Tailwind",
-    performance: "90%",
-    icon: RiTailwindCssFill,
-  },
-  {
-    title: "HTML",
-    performance: "90%",
-    icon: RiHtml5Fill,
-  },
-  {
-    title: "CSS/SCSS",
-    performance: "90%",
-    icon: RiCss3Fill,
+    title: "Front End Technologies",
+    list: [
+      {
+        title: "React JS",
+        icon: RiReactjsFill,
+      },
+           {
+        title: "Typescript",
+        icon: SiTypescript,
+      },
+      {
+        title: "React Native",
+        icon: RiReactjsFill,
+      },
+      {
+        title: "Tailwind",
+        icon: RiTailwindCssFill,
+      },
+      {
+        title: "HTML",
+        icon: RiHtml5Fill,
+      },
+      {
+        title: "CSS/SCSS",
+        icon: RiCss3Fill,
+      },
+      {
+        title: "Redux",
+        icon: SiRedux,
+      },
+      {
+        title: "Tanstack",
+        icon: SiRedux,
+      },
+
+      {
+        title: "Bootstrap",
+        icon: RiBootstrapFill,
+      },
+
+      {
+        title: "Material UI",
+        icon: SiMaterialdesign,
+      },
+      {
+        title: "Shadcn",
+        icon: SiShadcnui,
+      },
+
+    ],
   },
 
-  {
-    title: "Material UI",
-    performance: "90%",
-    icon: SiMaterialdesign,
-  },
-  {
-    title: "Shadcn",
-    performance: "90%",
-    icon: SiShadcnui,
+  {title: "Back-end Technologies",
+
+    list: [
+      {
+        title: "MongoDb",
+        icon: DiMongodb,
+      },
+      {
+        title: "MySql",
+        icon: DiMysql,
+      },
+       {
+        title: "Mongoose",
+        icon: DiMysql,
+      },
+       {
+        title: "Sequelize",
+        icon: DiMysql,
+      },
+         {
+        title: "Express",
+        icon: DiMysql,
+      },
+
+       {
+        title: "Docker",
+        icon: DiMysql,
+      },
+ 
+    ],
   },
 ];
 
 export const experience = [
+   {
+    title: "MNLeistung",
+    date: "Feb 2026 - Present",
+    description: "Lead Mobile App Developer",
+  },
+  {
+    title: "The Peddlers",
+    date: "July 2024 - Jan 2026",
+    description: "Fullstack Developer",
+  },
   {
     title: "Astropolis Inc",
-    date: "March 2023 - May 31,2024",
+    date: "March 2023 - May 2024",
     description: "Web Application Developer",
   },
   {
@@ -111,18 +124,19 @@ export const experience = [
     date: "May 2022 - May 2023",
     description: "Web Application Developer",
   },
-  {
-    title: "Semicolon Studios",
-    date: "Nov 2021 - May 2022",
-    description:
-      "Freelance Mobile App Developer.\nFreelance Web Application Developer.\nWord-Press Developer.",
-  },
-  {
+   {
     title: "Jazz Tech Services",
-    date: "Jul 2021 - March 2022",
+    date: "Oct 2021 - March 2022",
     description:
       "Freelance Web Application Developer.\nFreelance Mobile App Developer.\n",
   },
+  {
+    title: "Semicolon Studios",
+    date: "June 2021 - March 2022",
+    description:
+      "Freelance Mobile App Developer.\nFreelance Web Application Developer.\nWord-Press Developer.",
+  },
+ 
   {
     title: "Sutherland",
     date: "Oct 2019 - Jan 2021",

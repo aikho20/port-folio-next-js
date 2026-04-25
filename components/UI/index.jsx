@@ -1,4 +1,6 @@
 import Card from "./Card";
 import Carousel from "./Carousel";
+import Gallery from './Gallery'
+import Modal from './Modal'
 
-export {Card,Carousel}
+export {Card,Carousel,Gallery,Modal}
