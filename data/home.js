@@ -1,4 +1,4 @@
-import { DiMongodb, DiMysql } from "react-icons/di";
+import { DiDocker, DiMongodb, DiMysql } from "react-icons/di";
 import {
   RiBootstrapFill,
   RiCss3Fill,
@@ -9,10 +9,15 @@ import {
   RiTailwindCssFill,
 } from "react-icons/ri";
 import {
+  SiExpress,
   SiJsonwebtokens,
+  SiKotlin,
   SiMaterialdesign,
+  SiMongoose,
   SiRedux,
+  SiSequelize,
   SiShadcnui,
+  SiSwift,
   SiTypescript,
 } from "react-icons/si";
 
@@ -24,7 +29,7 @@ export const skillSet = [
         title: "React JS",
         icon: RiReactjsFill,
       },
-           {
+      {
         title: "Typescript",
         icon: SiTypescript,
       },
@@ -67,10 +72,19 @@ export const skillSet = [
         icon: SiShadcnui,
       },
 
+      {
+        title: "Kotlin",
+        icon: SiKotlin,
+      },
+      {
+        title: "Swift",
+        icon: SiSwift,
+      },
     ],
   },
 
-  {title: "Back-end Technologies",
+  {
+    title: "Back-end Technologies",
 
     list: [
       {
@@ -81,30 +95,29 @@ export const skillSet = [
         title: "MySql",
         icon: DiMysql,
       },
-       {
+      {
         title: "Mongoose",
-        icon: DiMysql,
+        icon: SiMongoose,
       },
-       {
+      {
         title: "Sequelize",
-        icon: DiMysql,
+        icon: SiSequelize,
       },
-         {
+      {
         title: "Express",
-        icon: DiMysql,
+        icon: SiExpress,
       },
 
-       {
+      {
         title: "Docker",
-        icon: DiMysql,
+        icon: DiDocker,
       },
- 
     ],
   },
 ];
 
 export const experience = [
-   {
+  {
     title: "MNLeistung",
     date: "Feb 2026 - Present",
     description: "Lead Mobile App Developer",
@@ -124,7 +137,7 @@ export const experience = [
     date: "May 2022 - May 2023",
     description: "Web Application Developer",
   },
-   {
+  {
     title: "Jazz Tech Services",
     date: "Oct 2021 - March 2022",
     description:
@@ -136,7 +149,7 @@ export const experience = [
     description:
       "Freelance Mobile App Developer.\nFreelance Web Application Developer.\nWord-Press Developer.",
   },
- 
+
   {
     title: "Sutherland",
     date: "Oct 2019 - Jan 2021",
