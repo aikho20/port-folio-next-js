@@ -31,6 +31,7 @@ export default function Home() {
               height={400}
               width={400}
               quality={100}
+              alt="image"
               src="/1000067666-removebg-preview.png"
               className="grayscale h-100 w-100 padding-5 rounded"
             />

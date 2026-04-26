@@ -61,6 +61,7 @@ export default function ImageGallery({images}) {
 
           <img
             src={images[selectedIndex]}
+            alt="image"
             className="max-h-[90vh] max-w-[90vw] object-contain rounded-lg"
           />
 

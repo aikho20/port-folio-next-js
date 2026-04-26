@@ -12,7 +12,7 @@ function Card({
   return (
     <div className="p-5" onClick={() => onClick()}>
       <div className="flex items-cecnter justify-center w-100">
-        <img src={resources?.[0]} className="max-h-[250px]" />
+        <img src={resources?.[0]} alt="image" className="max-h-[250px]" />
       </div>
 
       <h5 className="my-2 text-md font-bold tracking-tight text-gray-900 dark:text-white">
