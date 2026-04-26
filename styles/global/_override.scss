@@ -29,6 +29,10 @@ ul {
   background: $gray;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body::-webkit-scrollbar-track {
   background: #fff;
 }
